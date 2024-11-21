@@ -11,7 +11,10 @@
     ion-item ion-label {
         --color: var(--core-login-text-color);
 
-        p, h2, h3, .core-oauth-icon {
+        p,
+        h2,
+        h3,
+        .core-oauth-icon {
             color: var(--color);
         }
     }
@@ -89,7 +92,8 @@
     }
 
     @if ($core-fixed-url) {
-        .core-sitename, .core-siteurl {
+        .core-sitename,
+        .core-siteurl {
             display: none;
         }
     }
@@ -130,7 +134,6 @@
         }
     }
 
-
     @if ($core-login-hide-qrcode) {
         .core-login-site-qrcode,
         .core-login-methods-separator {
@@ -163,7 +166,6 @@
         margin-bottom: 8px;
         font: var(--mdl-typography-heading6-font);
     }
-
 }
 
 :host-context(:root.dark) {

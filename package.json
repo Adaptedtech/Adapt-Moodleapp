@@ -3,12 +3,12 @@
     "version": "5.0.0",
     "description": "The official app for Moodle.",
     "author": {
-        "name": "Moodle Pty Ltd.",
-        "email": "mobile@moodle.com"
+        "name": "LIVIU EDTECH LTDA",
+        "email": "ti@adaptliviu.com.br"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/moodlehq/moodleapp.git"
+        "url": "https://github.com/Adaptedtech/Adapt-Moodleapp"
     },
     "license": "Apache-2.0",
     "licenses": [
