@@ -9,7 +9,44 @@
  * -------------------------------------------
  */
 :root {
+    // Color palette
+    --black: #{$black};
+    --gray-900: #{$gray-900};
+    --gray-800: #{$gray-800};
+    --gray-700: #{$gray-700};
+    --gray-600: #{$gray-600};
+    --gray-500: #{$gray-500};
+    --gray-400: #{$gray-400};
+    --gray-300: #{$gray-300};
+    --gray-200: #{$gray-200};
+    --gray-100: #{$gray-100};
+    --white: #{$white};
 
+    --button-background-selected: #3b1a6a;
+
+    // Login Page
+    --core-login-background: #{$brand-color};
+    --core-login-text-color: var(--gray-100);
+    --core-login-input-background: var(--white);
+    --core-login-input-color: var(--gray-900);
+
+    // Main Menu
+    --core-bottom-tabs-background: #{$brand-color};
+    --core-bottom-tabs-color: var(--white);
+    --core-bottom-tabs-color-selected: var(--white);
+    --core-bottom-tabs-background-selected: var(--button-background-selected);
+    --core-bottom-tabs-badge-color: var(--primary);
+    --core-bottom-tabs-badge-text-color: var(--primary-contrast);
+
+    .limited-width > core-loading:not([slot]),
+    .menu > core-loading:not([slot]) {
+        &.core-loading-loaded {
+            --contents-display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        min-height: 100%;
+    }
 }
 
 /*
@@ -17,5 +54,4 @@
  * -------------------------------------------
  */
 :root.dark {
-
 }

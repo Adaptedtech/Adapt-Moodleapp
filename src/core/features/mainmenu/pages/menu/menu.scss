@@ -22,7 +22,9 @@
         visibility: visible;
         height: var(--network-message-height);
         line-height: var(--network-message-height);
-        padding-bottom: calc(var(--ion-safe-area-bottom, 0px) + var(--network-message-height));
+        padding-bottom: calc(
+            var(--ion-safe-area-bottom, 0px) + var(--network-message-height)
+        );
     }
 }
 
@@ -127,13 +129,20 @@ ion-tabs.placement-side {
     ion-tab-bar {
         order: -1;
         width: var(--menutabbar-size);
-        height: calc(100% - var(--ion-safe-area-top) - var(--ion-safe-area-bottom));
+        height: calc(
+            100% - var(--ion-safe-area-top) - var(--ion-safe-area-bottom)
+        );
         flex-direction: column;
         @include border-end(var(--border));
         border-top: 0;
         justify-content: flex-start;
 
-        @include padding(var(--ion-safe-area-top), 0px, var(--ion-safe-area-bottom), var(--ion-safe-area-left));
+        @include padding(
+            var(--ion-safe-area-top),
+            0px,
+            var(--ion-safe-area-bottom),
+            var(--ion-safe-area-left)
+        );
 
         ion-tab-button {
             --padding-start: 0;
@@ -143,8 +152,8 @@ ion-tabs.placement-side {
             }
         }
 
-
-        ion-tab-button, core-user-menu-button {
+        ion-tab-button,
+        core-user-menu-button {
             width: 100%;
             min-height: var(--menutabbar-size);
             flex: 0;
@@ -171,7 +180,7 @@ ion-tabs.placement-side {
     visibility: hidden;
     height: 0;
     transition: all 500ms ease-in-out;
-    opacity: .8;
+    opacity: 0.8;
     z-index: 12;
     font-size: var(--mdl-typography-body-font-sm);
 
