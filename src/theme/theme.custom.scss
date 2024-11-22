@@ -38,6 +38,8 @@
     --core-bottom-tabs-badge-color: #e3d6ff;
     --core-bottom-tabs-badge-text-color: #{$brand-color};
 
+    --contrast-background: var(--white);
+
     .core-login-credentials > core-loading:not([slot]) {
         &.core-loading-loaded {
             --contents-display: flex;
