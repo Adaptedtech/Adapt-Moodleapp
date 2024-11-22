@@ -12,7 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-import { CoreMainMenuHandler, CoreMainMenuHandlerData } from '@features/mainmenu/services/mainmenu-delegate';
+import {
+    CoreMainMenuHandler,
+    CoreMainMenuHandlerData,
+} from '@features/mainmenu/services/mainmenu-delegate';
 import {
     CoreSitePluginsContent,
     CoreSitePluginsMainMenuHandlerData,
@@ -23,8 +26,10 @@ import { CoreSitePluginsBaseHandler } from './base-handler';
 /**
  * Handler to display a site plugin in the main menu.
  */
-export class CoreSitePluginsMainMenuHandler extends CoreSitePluginsBaseHandler implements CoreMainMenuHandler {
-
+export class CoreSitePluginsMainMenuHandler
+    extends CoreSitePluginsBaseHandler
+    implements CoreMainMenuHandler
+{
     priority: number;
 
     constructor(
@@ -32,7 +37,7 @@ export class CoreSitePluginsMainMenuHandler extends CoreSitePluginsBaseHandler i
         protected title: string,
         protected plugin: CoreSitePluginsPlugin,
         protected handlerSchema: CoreSitePluginsMainMenuHandlerData,
-        protected initResult: CoreSitePluginsContent | null,
+        protected initResult: CoreSitePluginsContent | null
     ) {
         super(name);
 
@@ -45,7 +50,7 @@ export class CoreSitePluginsMainMenuHandler extends CoreSitePluginsBaseHandler i
     getDisplayData(): CoreMainMenuHandlerData {
         return {
             title: this.title,
-            icon: this.handlerSchema.displaydata?.icon || 'fas-question',
+            icon: this.handlerSchema.displaydata?.icon || 'ph-question',
             class: this.handlerSchema.displaydata?.class,
             page: `siteplugins/content/${this.plugin.component}/${this.handlerSchema.method}/0`,
             pageParams: {
@@ -56,5 +61,4 @@ export class CoreSitePluginsMainMenuHandler extends CoreSitePluginsBaseHandler i
             onlyInMore: true,
         };
     }
-
 }

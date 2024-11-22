@@ -14,7 +14,10 @@
 
 import { Injectable } from '@angular/core';
 import { CoreTag } from '../tag';
-import { CoreMainMenuHandler, CoreMainMenuHandlerData } from '@features/mainmenu/services/mainmenu-delegate';
+import {
+    CoreMainMenuHandler,
+    CoreMainMenuHandlerData,
+} from '@features/mainmenu/services/mainmenu-delegate';
 import { makeSingleton } from '@singletons';
 
 /**
@@ -22,7 +25,6 @@ import { makeSingleton } from '@singletons';
  */
 @Injectable({ providedIn: 'root' })
 export class CoreTagMainMenuHandlerService implements CoreMainMenuHandler {
-
     static readonly PAGE_NAME = 'tag';
 
     name = 'CoreTag';
@@ -44,13 +46,14 @@ export class CoreTagMainMenuHandlerService implements CoreMainMenuHandler {
      */
     getDisplayData(): CoreMainMenuHandlerData {
         return {
-            icon: 'fas-tags',
+            icon: 'ph-tag',
             title: 'core.tag.tags',
             page: CoreTagMainMenuHandlerService.PAGE_NAME,
             class: 'core-tag-search-handler',
         };
     }
-
 }
 
-export const CoreTagMainMenuHandler = makeSingleton(CoreTagMainMenuHandlerService);
+export const CoreTagMainMenuHandler = makeSingleton(
+    CoreTagMainMenuHandlerService
+);

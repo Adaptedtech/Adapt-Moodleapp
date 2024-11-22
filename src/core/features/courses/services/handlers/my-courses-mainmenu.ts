@@ -14,7 +14,10 @@
 
 import { Injectable } from '@angular/core';
 import { CoreSiteInfoUserHomepage } from '@classes/sites/unauthenticated-site';
-import { CoreMainMenuHandler, CoreMainMenuHandlerData } from '@features/mainmenu/services/mainmenu-delegate';
+import {
+    CoreMainMenuHandler,
+    CoreMainMenuHandlerData,
+} from '@features/mainmenu/services/mainmenu-delegate';
 import { CoreSiteHomeHomeHandler } from '@features/sitehome/services/handlers/sitehome-home';
 import { CoreSites } from '@services/sites';
 import { makeSingleton } from '@singletons';
@@ -25,8 +28,9 @@ import { CoreDashboardHomeHandler } from './dashboard-home';
  * Handler to add my courses into main menu.
  */
 @Injectable({ providedIn: 'root' })
-export class CoreCoursesMyCoursesMainMenuHandlerService implements CoreMainMenuHandler {
-
+export class CoreCoursesMyCoursesMainMenuHandlerService
+    implements CoreMainMenuHandler
+{
     static readonly PAGE_NAME = 'courses';
 
     name = 'CoreCoursesMyCourses';
@@ -50,8 +54,11 @@ export class CoreCoursesMyCoursesMainMenuHandlerService implements CoreMainMenuH
         }
 
         // Dashboard cannot be disabled on 3.5 or 3.6 so it will never show this tab.
-        const dashboardEnabled = await CoreDashboardHomeHandler.isEnabledForSite(siteId);
-        const siteHomeEnabled = await CoreSiteHomeHomeHandler.isEnabledForSite(siteId);
+        const dashboardEnabled =
+            await CoreDashboardHomeHandler.isEnabledForSite(siteId);
+        const siteHomeEnabled = await CoreSiteHomeHomeHandler.isEnabledForSite(
+            siteId
+        );
 
         return !dashboardEnabled && !siteHomeEnabled;
     }
@@ -60,20 +67,23 @@ export class CoreCoursesMyCoursesMainMenuHandlerService implements CoreMainMenuH
      * @inheritdoc
      */
     getDisplayData(): CoreMainMenuHandlerData {
-        const userHomePage = CoreSites.getCurrentSite()?.getInfo()?.userhomepage;
+        const userHomePage =
+            CoreSites.getCurrentSite()?.getInfo()?.userhomepage;
 
-        const displayMyCourses = userHomePage === CoreSiteInfoUserHomepage.HOMEPAGE_MYCOURSES ||
+        const displayMyCourses =
+            userHomePage === CoreSiteInfoUserHomepage.HOMEPAGE_MYCOURSES ||
             userHomePage === CoreSiteInfoUserHomepage.HOMEPAGE_URL;
 
         return {
             title: 'core.courses.mycourses',
             page: CoreCoursesMyCoursesMainMenuHandlerService.PAGE_NAME,
             class: 'core-courses-my-courses-handler',
-            icon: 'fas-graduation-cap',
+            icon: 'ph-graduation-cap',
             priority: displayMyCourses ? this.priority + 200 : this.priority,
         };
     }
-
 }
 
-export const CoreCoursesMyCoursesHomeHandler = makeSingleton(CoreCoursesMyCoursesMainMenuHandlerService);
+export const CoreCoursesMyCoursesHomeHandler = makeSingleton(
+    CoreCoursesMyCoursesMainMenuHandlerService
+);

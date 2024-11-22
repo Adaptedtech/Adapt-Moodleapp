@@ -14,7 +14,10 @@
 
 import { Injectable } from '@angular/core';
 import { makeSingleton } from '@singletons';
-import { CoreMainMenuHandler, CoreMainMenuHandlerData } from '@features/mainmenu/services/mainmenu-delegate';
+import {
+    CoreMainMenuHandler,
+    CoreMainMenuHandlerData,
+} from '@features/mainmenu/services/mainmenu-delegate';
 import { CoreSearchGlobalSearch } from '@features/search/services/global-search';
 
 export const CORE_SEARCH_PAGE_NAME = 'search';
@@ -24,7 +27,6 @@ export const CORE_SEARCH_PAGE_NAME = 'search';
  */
 @Injectable({ providedIn: 'root' })
 export class CoreSearchMainMenuHandlerService implements CoreMainMenuHandler {
-
     name = 'CoreSearch';
     priority = 575;
 
@@ -40,13 +42,14 @@ export class CoreSearchMainMenuHandlerService implements CoreMainMenuHandler {
      */
     getDisplayData(): CoreMainMenuHandlerData {
         return {
-            icon: 'fas-magnifying-glass',
+            icon: 'ph-magnifying-glass',
             title: 'core.search.globalsearch',
             page: CORE_SEARCH_PAGE_NAME,
             class: 'core-search-handler',
         };
     }
-
 }
 
-export const CoreSearchMainMenuHandler = makeSingleton(CoreSearchMainMenuHandlerService);
+export const CoreSearchMainMenuHandler = makeSingleton(
+    CoreSearchMainMenuHandlerService
+);

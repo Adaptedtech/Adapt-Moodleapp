@@ -15,15 +15,19 @@
 import { Injectable } from '@angular/core';
 import { AddonCalendar } from '../calendar';
 import { makeSingleton } from '@singletons';
-import { CoreMainMenuHandler, CoreMainMenuHandlerData } from '@features/mainmenu/services/mainmenu-delegate';
+import {
+    CoreMainMenuHandler,
+    CoreMainMenuHandlerData,
+} from '@features/mainmenu/services/mainmenu-delegate';
 import { ADDON_CALENDAR_PAGE_NAME } from '@addons/calendar/constants';
 
 /**
  * Handler to inject an option into main menu.
  */
 @Injectable({ providedIn: 'root' })
-export class AddonCalendarMainMenuHandlerService implements CoreMainMenuHandler {
-
+export class AddonCalendarMainMenuHandlerService
+    implements CoreMainMenuHandler
+{
     name = 'AddonCalendar';
     priority = 550;
 
@@ -43,13 +47,14 @@ export class AddonCalendarMainMenuHandlerService implements CoreMainMenuHandler 
      */
     getDisplayData(): CoreMainMenuHandlerData {
         return {
-            icon: 'far-calendar',
+            icon: 'ph-calendar',
             title: 'addon.calendar.calendar',
             page: ADDON_CALENDAR_PAGE_NAME,
             class: 'addon-calendar-handler',
         };
     }
-
 }
 
-export const AddonCalendarMainMenuHandler = makeSingleton(AddonCalendarMainMenuHandlerService);
+export const AddonCalendarMainMenuHandler = makeSingleton(
+    AddonCalendarMainMenuHandlerService
+);

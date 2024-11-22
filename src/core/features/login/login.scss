@@ -24,6 +24,13 @@
         text-decoration-color: var(--color);
     }
 
+    ion-button.core-login-login-button {
+        --mdl-button-disabled-opacity: 1;
+        --background: #f9b545;
+        --color: var(--core-login-text-color);
+        text-decoration-color: var(--color);
+    }
+
     .core-login-reconnect-warning {
         margin: 0px 0px 32px 0px;
     }
@@ -39,7 +46,7 @@
 
                 img {
                     max-width: 100%;
-                    max-height: 144px;
+                    max-height: 160px;
                 }
             }
 

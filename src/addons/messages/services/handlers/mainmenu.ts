@@ -13,17 +13,16 @@
 // limitations under the License.
 
 import { Injectable } from '@angular/core';
+import { AddonMessages } from '../messages';
 import {
-    AddonMessages,
-} from '../messages';
-import { CoreMainMenuHandler, CoreMainMenuHandlerToDisplay } from '@features/mainmenu/services/mainmenu-delegate';
+    CoreMainMenuHandler,
+    CoreMainMenuHandlerToDisplay,
+} from '@features/mainmenu/services/mainmenu-delegate';
 import { CoreCronHandler } from '@services/cron';
 import { CoreSites } from '@services/sites';
 import { CoreEvents } from '@singletons/events';
 import { CoreUtils } from '@singletons/utils';
-import {
-    CorePushNotificationsNotificationBasicData,
-} from '@features/pushnotifications/services/pushnotifications';
+import { CorePushNotificationsNotificationBasicData } from '@features/pushnotifications/services/pushnotifications';
 import { CorePushNotificationsDelegate } from '@features/pushnotifications/services/push-delegate';
 import { makeSingleton } from '@singletons';
 import {
@@ -36,15 +35,16 @@ import { MAIN_MENU_HANDLER_BADGE_UPDATED_EVENT } from '@features/mainmenu/consta
  * Handler to inject an option into main menu.
  */
 @Injectable({ providedIn: 'root' })
-export class AddonMessagesMainMenuHandlerService implements CoreMainMenuHandler, CoreCronHandler {
-
+export class AddonMessagesMainMenuHandlerService
+    implements CoreMainMenuHandler, CoreCronHandler
+{
     static readonly PAGE_NAME = 'messages';
 
     name = 'AddonMessages';
     priority = 700;
 
     protected handler: CoreMainMenuHandlerToDisplay = {
-        icon: 'fas-comments',
+        icon: 'ph-chats',
         title: 'addon.messages.messages',
         page: AddonMessagesMainMenuHandlerService.PAGE_NAME,
         class: 'addon-messages-handler',
@@ -60,13 +60,16 @@ export class AddonMessagesMainMenuHandlerService implements CoreMainMenuHandler,
     protected badgeCount?: number;
 
     constructor() {
+        CoreEvents.on(
+            ADDON_MESSAGES_UNREAD_CONVERSATION_COUNTS_EVENT,
+            (data) => {
+                this.unreadCount =
+                    data.favourites + data.individual + data.group + data.self;
+                this.orMore = !!data.orMore;
 
-        CoreEvents.on(ADDON_MESSAGES_UNREAD_CONVERSATION_COUNTS_EVENT, (data) => {
-            this.unreadCount = data.favourites + data.individual + data.group + data.self;
-            this.orMore = !!data.orMore;
-
-            data.siteId && this.updateBadge(data.siteId);
-        });
+                data.siteId && this.updateBadge(data.siteId);
+            }
+        );
 
         CoreEvents.on(ADDON_MESSAGES_CONTACT_REQUESTS_COUNT_EVENT, (data) => {
             this.contactRequestsCount = data.count;
@@ -84,19 +87,22 @@ export class AddonMessagesMainMenuHandlerService implements CoreMainMenuHandler,
         });
 
         // If a message push notification is received, refresh the count.
-        CorePushNotificationsDelegate.on<CorePushNotificationsNotificationBasicData>('receive').subscribe(
-            (notification) => {
+        CorePushNotificationsDelegate.on<CorePushNotificationsNotificationBasicData>(
+            'receive'
+        ).subscribe((notification) => {
             // New message received. If it's from current site, refresh the data.
-                const isMessage = CoreUtils.isFalseOrZero(notification.notif) ||
-                    notification.name == 'messagecontactrequests';
-                if (isMessage && CoreSites.isCurrentSite(notification.site)) {
-                    this.refreshBadge(notification.site);
-                }
-            },
-        );
+            const isMessage =
+                CoreUtils.isFalseOrZero(notification.notif) ||
+                notification.name == 'messagecontactrequests';
+            if (isMessage && CoreSites.isCurrentSite(notification.site)) {
+                this.refreshBadge(notification.site);
+            }
+        });
 
         // Register Badge counter.
-        CorePushNotificationsDelegate.registerCounterHandler(AddonMessagesMainMenuHandlerService.name);
+        CorePushNotificationsDelegate.registerCounterHandler(
+            AddonMessagesMainMenuHandlerService.name
+        );
     }
 
     /**
@@ -137,16 +143,24 @@ export class AddonMessagesMainMenuHandlerService implements CoreMainMenuHandler,
 
         const promises: Promise<unknown>[] = [];
 
-        promises.push(AddonMessages.refreshUnreadConversationCounts(badgeSiteId).catch(() => {
-            this.unreadCount = 0;
-            this.orMore = false;
-        }));
+        promises.push(
+            AddonMessages.refreshUnreadConversationCounts(badgeSiteId).catch(
+                () => {
+                    this.unreadCount = 0;
+                    this.orMore = false;
+                }
+            )
+        );
 
         // Refresh the number of contact requests in 3.6+ sites.
         if (!unreadOnly && AddonMessages.isGroupMessagingEnabled()) {
-            promises.push(AddonMessages.refreshContactRequestsCount(badgeSiteId).catch(() => {
-                this.contactRequestsCount = 0;
-            }));
+            promises.push(
+                AddonMessages.refreshContactRequestsCount(badgeSiteId).catch(
+                    () => {
+                        this.contactRequestsCount = 0;
+                    }
+                )
+            );
         }
 
         await Promise.all(promises).finally(() => {
@@ -182,7 +196,7 @@ export class AddonMessagesMainMenuHandlerService implements CoreMainMenuHandler,
                 handler: AddonMessagesMainMenuHandlerService.name,
                 value: totalCount,
             },
-            siteId,
+            siteId
         );
     }
 
@@ -238,7 +252,8 @@ export class AddonMessagesMainMenuHandlerService implements CoreMainMenuHandler,
     canManualSync(): boolean {
         return true;
     }
-
 }
 
-export const AddonMessagesMainMenuHandler = makeSingleton(AddonMessagesMainMenuHandlerService);
+export const AddonMessagesMainMenuHandler = makeSingleton(
+    AddonMessagesMainMenuHandlerService
+);

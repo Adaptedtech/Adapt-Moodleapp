@@ -18,25 +18,32 @@ import { CoreSites } from '@services/sites';
 import { CoreUtils } from '@singletons/utils';
 import { makeSingleton } from '@singletons';
 import { CoreEvents } from '@singletons/events';
-import { CoreMainMenuHandler, CoreMainMenuHandlerData } from '@features/mainmenu/services/mainmenu-delegate';
+import {
+    CoreMainMenuHandler,
+    CoreMainMenuHandlerData,
+} from '@features/mainmenu/services/mainmenu-delegate';
 import { CorePushNotifications } from '@features/pushnotifications/services/pushnotifications';
 import { CorePushNotificationsDelegate } from '@features/pushnotifications/services/push-delegate';
-import { AddonNotifications, AddonNotificationsProvider } from '../notifications';
+import {
+    AddonNotifications,
+    AddonNotificationsProvider,
+} from '../notifications';
 import { MAIN_MENU_HANDLER_BADGE_UPDATED_EVENT } from '@features/mainmenu/constants';
 
 /**
  * Handler to inject an option into main menu.
  */
 @Injectable({ providedIn: 'root' })
-export class AddonNotificationsMainMenuHandlerService implements CoreMainMenuHandler {
-
+export class AddonNotificationsMainMenuHandlerService
+    implements CoreMainMenuHandler
+{
     static readonly PAGE_NAME = 'notifications';
 
     name = 'AddonNotifications';
     priority = 600;
 
     protected handlerData: CoreMainMenuHandlerData = {
-        icon: 'fas-bell',
+        icon: 'ph-bell-ringing',
         title: 'addon.notifications.notifications',
         page: AddonNotificationsMainMenuHandlerService.PAGE_NAME,
         class: 'addon-notifications-handler',
@@ -65,15 +72,22 @@ export class AddonNotificationsMainMenuHandlerService implements CoreMainMenuHan
         });
 
         // If a push notification is received, refresh the count.
-        CorePushNotificationsDelegate.on('receive').subscribe((notification) => {
-            // New notification received. If it's from current site, refresh the data.
-            if (CoreUtils.isTrueOrOne(notification.notif) && CoreSites.isCurrentSite(notification.site)) {
-                this.updateBadge(notification.site);
+        CorePushNotificationsDelegate.on('receive').subscribe(
+            (notification) => {
+                // New notification received. If it's from current site, refresh the data.
+                if (
+                    CoreUtils.isTrueOrOne(notification.notif) &&
+                    CoreSites.isCurrentSite(notification.site)
+                ) {
+                    this.updateBadge(notification.site);
+                }
             }
-        });
+        );
 
         // Register Badge counter.
-        CorePushNotificationsDelegate.registerCounterHandler(AddonNotificationsMainMenuHandlerService.name);
+        CorePushNotificationsDelegate.registerCounterHandler(
+            AddonNotificationsMainMenuHandlerService.name
+        );
     }
 
     /**
@@ -111,13 +125,23 @@ export class AddonNotificationsMainMenuHandlerService implements CoreMainMenuHan
         }
 
         try {
-            const unreadCountData = await AddonNotifications.getUnreadNotificationsCount(undefined, siteId);
+            const unreadCountData =
+                await AddonNotifications.getUnreadNotificationsCount(
+                    undefined,
+                    siteId
+                );
 
-            this.handlerData.badge = unreadCountData.count > 0
-                ? unreadCountData.count + (unreadCountData.hasMore ? '+' : '')
-                : '';
+            this.handlerData.badge =
+                unreadCountData.count > 0
+                    ? unreadCountData.count +
+                      (unreadCountData.hasMore ? '+' : '')
+                    : '';
 
-            CorePushNotifications.updateAddonCounter(AddonNotificationsMainMenuHandlerService.name, unreadCountData.count, siteId);
+            CorePushNotifications.updateAddonCounter(
+                AddonNotificationsMainMenuHandlerService.name,
+                unreadCountData.count,
+                siteId
+            );
 
             CoreEvents.trigger(
                 MAIN_MENU_HANDLER_BADGE_UPDATED_EVENT,
@@ -125,7 +149,7 @@ export class AddonNotificationsMainMenuHandlerService implements CoreMainMenuHan
                     handler: AddonNotificationsMainMenuHandlerService.name,
                     value: unreadCountData.count,
                 },
-                siteId,
+                siteId
             );
         } catch {
             this.handlerData.badge = '';
@@ -133,7 +157,8 @@ export class AddonNotificationsMainMenuHandlerService implements CoreMainMenuHan
             this.handlerData.loading = false;
         }
     }
-
 }
 
-export const AddonNotificationsMainMenuHandler = makeSingleton(AddonNotificationsMainMenuHandlerService);
+export const AddonNotificationsMainMenuHandler = makeSingleton(
+    AddonNotificationsMainMenuHandlerService
+);
