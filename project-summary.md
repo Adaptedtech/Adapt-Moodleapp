@@ -1,0 +1,840 @@
+## Capacitor Plugins
+
+## Cordova Plugins
+
+## Dependencies
+
+- 🟩 [@angular-builders/custom-webpack@17.0.2](https://github.com/just-jeb/angular-builders.git)
+- 🟩 [@angular-devkit/build-angular@17.3.10](https://github.com/angular/angular-cli.git)
+- 🟩 [@angular-eslint/builder@17.5.3](https://github.com/angular-eslint/angular-eslint.git)
+- 🟩 [@angular-eslint/eslint-plugin@17.5.3](https://github.com/angular-eslint/angular-eslint.git)
+- 🟩 [@angular-eslint/eslint-plugin-template@17.5.3](https://github.com/angular-eslint/angular-eslint.git)
+- 🟩 [@angular-eslint/schematics@17.5.3](https://github.com/angular-eslint/angular-eslint.git)
+- 🟩 [@angular-eslint/template-parser@17.5.3](https://github.com/angular-eslint/angular-eslint.git)
+- 🟧 [@angular/animations@17.3.12](https://github.com/angular/angular.git) - Is behind 2 major versions.
+- 🟩 [@angular/cli@17.3.10](https://github.com/angular/angular-cli.git)
+- 🟧 [@angular/common@17.3.12](https://github.com/angular/angular.git) - Is behind 2 major versions.
+- 🟧 [@angular/compiler@17.3.12](https://github.com/angular/angular.git) - Is behind 2 major versions.
+- 🟩 [@angular/compiler-cli@17.3.12](https://github.com/angular/angular.git)
+- 🟧 [@angular/core@17.3.12](https://github.com/angular/angular.git) - Is behind 2 major versions.
+- 🟧 [@angular/forms@17.3.12](https://github.com/angular/angular.git) - Is behind 2 major versions.
+- 🟩 [@angular/language-service@17.3.12](https://github.com/angular/angular.git)
+- 🟧 [@angular/platform-browser@17.3.12](https://github.com/angular/angular.git) - Is behind 2 major versions.
+- 🟧 [@angular/platform-browser-dynamic@17.3.12](https://github.com/angular/angular.git) - Is behind 2 major versions.
+- 🟧 [@angular/router@17.3.12](https://github.com/angular/angular.git) - Is behind 2 major versions.
+- 🟩 [@awesome-cordova-plugins/badge@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/camera@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/clipboard@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/core@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/device@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/file@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/file-opener@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/geolocation@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/http@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/in-app-browser@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/ionic-webview@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/keyboard@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/local-notifications@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/media-capture@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/network@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/push@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/splash-screen@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/sqlite@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/status-bar@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@awesome-cordova-plugins/web-intent@6.9.0](https://github.com/danielsogl/awesome-cordova-plugins.git)
+- 🟩 [@ionic/angular@8.3.1](https://github.com/ionic-team/ionic-framework.git)
+- 🟩 [@ionic/angular-toolkit@11.0.1](https://github.com/ionic-team/angular-toolkit.git)
+- 🟩 [@ionic/cli@7.2.0](https://github.com/ionic-team/ionic-cli.git)
+- 🟧 [@ionic/cordova-builders@11.0.0](https://github.com/ionic-team/angular-toolkit.git) - Is behind 1 major version.
+- 🟥 [@jsdevtools/coverage-istanbul-loader@3.0.5](https://github.com/JS-DevTools/coverage-istanbul-loader.git) - Unmaintained (4.4 years since last release)
+- 🟧 [@moodlehq/cordova-plugin-advanced-http@3.3.1](https://github.com/moodlemobile/cordova-plugin-advanced-http.git) - May be unmaintained (1.2 years since last release)
+- 🟩 [@moodlehq/cordova-plugin-camera@7.0.0](https://github.com/moodlemobile/cordova-plugin-camera.git)
+- 🟩 [@moodlehq/cordova-plugin-file-opener@4.0.0](https://github.com/moodlemobile/cordova-plugin-file-opener.git)
+- 🟩 [@moodlehq/cordova-plugin-file-transfer@2.0.0](https://github.com/moodlemobile/cordova-plugin-file-transfer.git#main)
+- 🟥 [@moodlehq/cordova-plugin-inappbrowser@5.0.0](https://github.com/moodlemobile/cordova-plugin-inappbrowser.git) - Unmaintained (3 years since last release)
+- 🟩 [@moodlehq/cordova-plugin-intent@2.2.0](https://github.com/moodlemobile/cordova-plugin-intent.git)
+- 🟩 [@moodlehq/cordova-plugin-ionic-webview@5.0.0](https://github.com/moodlemobile/cordova-plugin-ionic-webview.git)
+- 🟧 [@moodlehq/cordova-plugin-qrscanner@3.0.1](https://github.com/moodlemobile/cordova-plugin-qrscanner.git) - May be unmaintained (1.8 years since last release)
+- 🟩 [@moodlehq/cordova-plugin-statusbar@4.0.0](https://github.com/moodlemobile/cordova-plugin-statusbar.git)
+- 🟥 [@moodlehq/cordova-plugin-zip@3.1.0](https://github.com/moodlemobile/cordova-plugin-zip.git) - Unmaintained (2.2 years since last release)
+- 🟩 [@moodlehq/phonegap-plugin-push@4.0.0](https://github.com/moodlemobile/phonegap-plugin-push.git)
+- 🟧 @ngx-translate/core@15.0.0 - Is behind 1 major version.
+- 🟧 @ngx-translate/http-loader@8.0.0 - Is behind 8 major versions.
+- 🟩 [@sqlite.org/sqlite-wasm@3.45.0](https://github.com/sqlite/sqlite-wasm.git)
+- 🟧 [@types/chart.js@2.9.41](https://github.com/DefinitelyTyped/DefinitelyTyped.git) - May be unmaintained (1 years since last release)
+- 🟧 [@types/cordova@0.0.34](https://github.com/DefinitelyTyped/DefinitelyTyped.git) - Is behind 11 major versions.
+- 🟩 [@types/dom-mediacapture-record@1.0.7](https://github.com/DefinitelyTyped/DefinitelyTyped.git)
+- 🟧 @types/faker@5.5.9 - Unable to find information on npm.
+- 🟩 [@types/jest@26.0.24](https://github.com/DefinitelyTyped/DefinitelyTyped.git)
+- 🟩 [@types/node@18.19.53](https://github.com/DefinitelyTyped/DefinitelyTyped.git)
+- 🟧 [@types/resize-observer-browser@0.1.11](https://github.com/DefinitelyTyped/DefinitelyTyped.git) - May be unmaintained (1 years since last release)
+- 🟩 [@types/webpack-env@1.18.5](https://github.com/DefinitelyTyped/DefinitelyTyped.git)
+- 🟩 [@typescript-eslint/eslint-plugin@6.21.0](https://github.com/typescript-eslint/typescript-eslint.git)
+- 🟩 [@typescript-eslint/parser@6.21.0](https://github.com/typescript-eslint/typescript-eslint.git)
+- 🟧 [chart.js@2.9.4](https://github.com/chartjs/Chart.js.git) - Is behind 2 major versions.
+- 🟩 [check-es-compat@3.2.1](https://github.com/robatwilliams/es-compat.git)
+- 🟥 [circular-dependency-plugin@5.2.2](https://github.com/aackerman/circular-dependency-plugin.git) - Unmaintained (4.1 years since last release)
+- 🟩 [concurrently@8.2.2](https://github.com/open-cli-tools/concurrently.git)
+- 🟩 [cordova@12.0.0](https://github.com/apache/cordova-cli.git)
+- 🟩 [cordova-android@13.0.0](https://github.com/apache/cordova-android.git)
+- 🟥 [cordova-clipboard@1.3.0](https://github.com/ihadeed/cordova-clipboard.git) - Unmaintained (5.4 years since last release)
+- 🟩 [cordova-ios@7.1.1](https://github.com/apache/cordova-ios.git)
+- 🟥 [cordova-plugin-add-swift-support@2.0.2](https://github.com/akofman/cordova-plugin-add-swift-support.git) - Unmaintained (5.6 years since last release)
+- 🟥 [cordova-plugin-androidx-adapter@1.1.3](https://github.com/dpa99c/cordova-plugin-androidx-adapter.git) - is not required when using cordova-android 10+
+- 🟧 [cordova-plugin-badge@0.8.9](https://github.com/katzer/cordova-plugin-badge.git) - May be unmaintained (1.6 years since last release)
+- 🟥 [cordova-plugin-chooser@1.3.2](https://github.com/cyph/cordova-plugin-chooser.git) - Unmaintained (4.3 years since last release)
+- 🟥 [cordova-plugin-customurlscheme@5.0.2](https://github.com/EddyVerbruggen/Custom-URL-scheme.git) - Unmaintained (4.3 years since last release)
+- 🟧 [cordova-plugin-device@2.1.0](https://github.com/apache/cordova-plugin-device.git) - Is behind 1 major version.
+- 🟩 [cordova-plugin-file@8.1.0](https://github.com/apache/cordova-plugin-file.git)
+- 🟧 [cordova-plugin-geolocation@5.0.0](https://github.com/apache/cordova-plugin-geolocation.git) - May be unmaintained (1.2 years since last release)
+- 🟥 [cordova-plugin-ionic-keyboard@2.2.0](https://github.com/ionic-team/cordova-plugin-ionic-keyboard.git) - Unmaintained (5.2 years since last release)
+- 🟩 [cordova-plugin-local-notification@1.0.0](https://github.com/katzer/cordova-plugin-local-notifications.git)
+- 🟧 [cordova-plugin-media-capture@5.0.0](https://github.com/apache/cordova-plugin-media-capture.git) - May be unmaintained (1.3 years since last release)
+- 🟧 cordova-plugin-moodleapp - Requires manual developer maintenance as it custom / forked.
+- 🟥 [cordova-plugin-network-information@3.0.0](https://github.com/apache/cordova-plugin-network-information.git) - Unmaintained (3.5 years since last release)
+- 🟥 [cordova-plugin-prevent-override@1.0.1](https://github.com/moodlemobile/cordova-plugin-prevent-override.git#main) - Unmaintained (3.3 years since last release)
+- 🟧 [cordova-plugin-screen-orientation@3.0.4](https://github.com/apache/cordova-plugin-screen-orientation.git) - May be unmaintained (1 years since last release)
+- 🟥 [cordova-plugin-wkuserscript@1.0.1](https://github.com/moodlemobile/cordova-plugin-wkuserscript.git#main) - Unmaintained (3.3 years since last release)
+- 🟥 [cordova-plugin-wkwebview-cookies@1.0.1](https://github.com/moodlemobile/cordova-plugin-wkwebview-cookies.git#main) - Unmaintained (3.3 years since last release)
+- 🟧 [cordova-sqlite-storage@6.1.0](https://github.com/xpbrew/cordova-sqlite-storage.git) - May be unmaintained (1.9 years since last release)
+- 🟩 [core-js@3.38.1](https://github.com/zloirock/core-js.git)
+- 🟥 [cross-env@7.0.3](https://github.com/kentcdodds/cross-env.git) - Unmaintained (4 years since last release)
+- 🟥 [es6-promise-plugin@4.2.2](https://github.com/vstirbu/PromisesPlugin.git) - Unmaintained (6.9 years since last release)
+- 🟩 [eslint@8.57.1](https://github.com/eslint/eslint.git)
+- 🟩 [eslint-plugin-deprecation@2.0.0](https://github.com/gund/eslint-plugin-deprecation.git)
+- 🟥 [eslint-plugin-header@3.1.1](https://github.com/Stuk/eslint-plugin-header.git) - Unmaintained (3.8 years since last release)
+- 🟩 [eslint-plugin-jest@27.9.0](https://github.com/jest-community/eslint-plugin-jest.git)
+- 🟩 [eslint-plugin-jsdoc@46.10.1](https://github.com/gajus/eslint-plugin-jsdoc.git)
+- 🟥 [eslint-plugin-prefer-arrow@1.2.3](https://github.com/TristonJ/eslint-plugin-prefer-arrow.git) - Unmaintained (3.8 years since last release)
+- 🟩 [eslint-plugin-promise@6.6.0](https://github.com/eslint-community/eslint-plugin-promise.git)
+- 🟥 [faker@5.5.3](https://github.com/Marak/Faker.js.git) - Unmaintained (2.9 years since last release)
+- 🟩 [fs-extra@9.1.0](https://github.com/jprichardson/node-fs-extra.git)
+- 🟩 [gulp@5.0.0](https://github.com/gulpjs/gulp.git)
+- 🟥 [gulp-clip-empty-files@0.1.2](https://github.com/nahody/gulp-clip-empty-files.git) - Unmaintained (8.6 years since last release)
+- 🟥 [gulp-slash@1.1.3](https://github.com/bholloway/gulp-slash) - Unmaintained (10.3 years since last release)
+- 🟩 [ionicons@7.4.0](https://github.com/ionic-team/ionicons.git)
+- 🟩 [jest@29.7.0](https://github.com/jestjs/jest.git)
+- 🟩 [jest-preset-angular@13.1.6](https://github.com/thymikee/jest-preset-angular.git)
+- 🟩 [jsonc-parser@2.3.1](https://github.com/microsoft/node-jsonc-parser.git)
+- 🟥 [jszip@3.10.1](https://github.com/Stuk/jszip.git) - Unmaintained (2.3 years since last release)
+- 🟧 [mathjax@2.7.9](https://github.com/mathjax/MathJax.git) - Is behind 1 major version.
+- 🟩 [minimatch@9.0.5](https://github.com/isaacs/minimatch.git)
+- 🟩 [moment@2.30.1](https://github.com/moment/moment.git) - Migrate the deprecated moment.js to date-fns
+- 🟩 [moment-timezone@0.5.45](https://github.com/moment/moment-timezone.git)
+- 🟥 [mp3-mediarecorder@4.0.5](https://github.com/elsmr/mp3-mediarecorder.git) - Unmaintained (3.5 years since last release)
+- 🟩 [native-run@2.0.1](https://github.com/ionic-team/native-run.git)
+- 🟥 [nl.kingsquare.cordova.background-audio@1.0.1](https://github.com/AubreyHewes/cordova-background-audio.git) - Unmaintained (9.4 years since last release)
+- 🟩 [nyc@15.1.0](https://github.com/istanbuljs/nyc.git)
+- 🟩 [ogv@1.9.0](https://github.com/bvibber/ogv.js.git)
+- 🟧 [patch-package@6.5.1](https://github.com/ds300/patch-package.git) - May be unmaintained (1.3 years since last release)
+- 🟩 [rxjs@7.8.1](https://github.com/reactivex/rxjs.git)
+- 🟩 [swiper@11.1.14](https://github.com/nolimits4web/Swiper.git)
+- 🟩 [terser-webpack-plugin@5.3.10](https://github.com/webpack-contrib/terser-webpack-plugin.git)
+- 🟩 [ts-jest@29.2.5](https://github.com/kulshekhar/ts-jest.git)
+- 🟥 [ts-md5@1.3.1](https://github.com/cotag/ts-md5.git) - Unmaintained (2.3 years since last release)
+- 🟩 [ts-node@8.10.2](https://github.com/TypeStrong/ts-node.git)
+- 🟩 [tslib@2.7.0](https://github.com/Microsoft/tslib.git)
+- 🟩 [typescript@5.3.3](https://github.com/microsoft/TypeScript.git)
+- 🟧 [video.js@7.21.6](https://github.com/videojs/video.js.git) - Is behind 1 major version.
+- 🟥 [vinyl@3.0.0](https://github.com/gulpjs/vinyl.git) - Unmaintained (2.2 years since last release)
+- 🟩 [zone.js@0.14.10](https://github.com/angular/angular.git)
+### Maintenance Score
+80 out of 134 dependencies were up to date without issues.
+
+
+
+## Nonstandard naming
+The following files and folders do not follow the standard naming convention:
+
+- /.DS_Store
+- /assets/.DS_Store
+- /assets/fonts/.DS_Store
+- /assets/fonts/font-awesome/.DS_Store
+- /assets/fonts/font-awesome/LICENSE.txt
+- /assets/fonts/moodle/.DS_Store
+- /assets/icon/.DS_Store
+- /assets/img/.DS_Store
+- /assets/img/icons/coursesOLD.svg
+- /assets/img/login_logoOLD.png
+- /assets/lang/.DS_Store
+- /assets/lib/h5p/fonts/open-sans/LICENSE-2.0.txt
+- /assets/lib/mathjax/MathJax.js
+- /assets/lib/mathjax/extensions/AssistiveMML.js
+- /assets/lib/mathjax/extensions/CHTML-preview.js
+- /assets/lib/mathjax/extensions/FontWarnings.js
+- /assets/lib/mathjax/extensions/HTML-CSS/handle-floats.js
+- /assets/lib/mathjax/extensions/HelpDialog.js
+- /assets/lib/mathjax/extensions/MatchWebFonts.js
+- /assets/lib/mathjax/extensions/MathEvents.js
+- /assets/lib/mathjax/extensions/MathML/content-mathml.js
+- /assets/lib/mathjax/extensions/MathML/mml3.js
+- /assets/lib/mathjax/extensions/MathMenu.js
+- /assets/lib/mathjax/extensions/MathZoom.js
+- /assets/lib/mathjax/extensions/Safe.js
+- /assets/lib/mathjax/extensions/TeX/AMScd.js
+- /assets/lib/mathjax/extensions/TeX/AMSmath.js
+- /assets/lib/mathjax/extensions/TeX/AMSsymbols.js
+- /assets/lib/mathjax/extensions/TeX/HTML.js
+- /assets/lib/mathjax/extensions/TeX/action.js
+- /assets/lib/mathjax/extensions/TeX/autobold.js
+- /assets/lib/mathjax/extensions/TeX/autoload-all.js
+- /assets/lib/mathjax/extensions/TeX/bbox.js
+- /assets/lib/mathjax/extensions/TeX/begingroup.js
+- /assets/lib/mathjax/extensions/TeX/boldsymbol.js
+- /assets/lib/mathjax/extensions/TeX/cancel.js
+- /assets/lib/mathjax/extensions/TeX/color.js
+- /assets/lib/mathjax/extensions/TeX/enclose.js
+- /assets/lib/mathjax/extensions/TeX/extpfeil.js
+- /assets/lib/mathjax/extensions/TeX/mathchoice.js
+- /assets/lib/mathjax/extensions/TeX/mediawiki-texvc.js
+- /assets/lib/mathjax/extensions/TeX/mhchem.js
+- /assets/lib/mathjax/extensions/TeX/mhchem3/mhchem.js
+- /assets/lib/mathjax/extensions/TeX/newcommand.js
+- /assets/lib/mathjax/extensions/TeX/noErrors.js
+- /assets/lib/mathjax/extensions/TeX/noUndefined.js
+- /assets/lib/mathjax/extensions/TeX/text-macros.js
+- /assets/lib/mathjax/extensions/TeX/unicode.js
+- /assets/lib/mathjax/extensions/TeX/verb.js
+- /assets/lib/mathjax/extensions/jsMath2jax.js
+- /assets/lib/mathjax/extensions/toMathML.js
+- /assets/lib/mathjax/jax/element/mml/optable/Arrows.js
+- /assets/lib/mathjax/jax/element/mml/optable/BasicLatin.js
+- /assets/lib/mathjax/jax/element/mml/optable/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/element/mml/optable/CombDiactForSymbols.js
+- /assets/lib/mathjax/jax/element/mml/optable/Dingbats.js
+- /assets/lib/mathjax/jax/element/mml/optable/GeneralPunctuation.js
+- /assets/lib/mathjax/jax/element/mml/optable/GeometricShapes.js
+- /assets/lib/mathjax/jax/element/mml/optable/GreekAndCoptic.js
+- /assets/lib/mathjax/jax/element/mml/optable/Latin1Supplement.js
+- /assets/lib/mathjax/jax/element/mml/optable/LetterlikeSymbols.js
+- /assets/lib/mathjax/jax/element/mml/optable/MathOperators.js
+- /assets/lib/mathjax/jax/element/mml/optable/MiscMathSymbolsA.js
+- /assets/lib/mathjax/jax/element/mml/optable/MiscMathSymbolsB.js
+- /assets/lib/mathjax/jax/element/mml/optable/MiscSymbolsAndArrows.js
+- /assets/lib/mathjax/jax/element/mml/optable/MiscTechnical.js
+- /assets/lib/mathjax/jax/element/mml/optable/SpacingModLetters.js
+- /assets/lib/mathjax/jax/element/mml/optable/SuppMathOperators.js
+- /assets/lib/mathjax/jax/element/mml/optable/SupplementalArrowsA.js
+- /assets/lib/mathjax/jax/element/mml/optable/SupplementalArrowsB.js
+- /assets/lib/mathjax/jax/input/AsciiMath/config.js
+- /assets/lib/mathjax/jax/input/AsciiMath/jax.js
+- /assets/lib/mathjax/jax/input/MathML/config.js
+- /assets/lib/mathjax/jax/input/MathML/entities/a.js
+- /assets/lib/mathjax/jax/input/MathML/entities/b.js
+- /assets/lib/mathjax/jax/input/MathML/entities/c.js
+- /assets/lib/mathjax/jax/input/MathML/entities/d.js
+- /assets/lib/mathjax/jax/input/MathML/entities/e.js
+- /assets/lib/mathjax/jax/input/MathML/entities/f.js
+- /assets/lib/mathjax/jax/input/MathML/entities/fr.js
+- /assets/lib/mathjax/jax/input/MathML/entities/g.js
+- /assets/lib/mathjax/jax/input/MathML/entities/h.js
+- /assets/lib/mathjax/jax/input/MathML/entities/i.js
+- /assets/lib/mathjax/jax/input/MathML/entities/j.js
+- /assets/lib/mathjax/jax/input/MathML/entities/k.js
+- /assets/lib/mathjax/jax/input/MathML/entities/l.js
+- /assets/lib/mathjax/jax/input/MathML/entities/m.js
+- /assets/lib/mathjax/jax/input/MathML/entities/n.js
+- /assets/lib/mathjax/jax/input/MathML/entities/o.js
+- /assets/lib/mathjax/jax/input/MathML/entities/opf.js
+- /assets/lib/mathjax/jax/input/MathML/entities/p.js
+- /assets/lib/mathjax/jax/input/MathML/entities/q.js
+- /assets/lib/mathjax/jax/input/MathML/entities/r.js
+- /assets/lib/mathjax/jax/input/MathML/entities/s.js
+- /assets/lib/mathjax/jax/input/MathML/entities/scr.js
+- /assets/lib/mathjax/jax/input/MathML/entities/t.js
+- /assets/lib/mathjax/jax/input/MathML/entities/u.js
+- /assets/lib/mathjax/jax/input/MathML/entities/v.js
+- /assets/lib/mathjax/jax/input/MathML/entities/w.js
+- /assets/lib/mathjax/jax/input/MathML/entities/x.js
+- /assets/lib/mathjax/jax/input/MathML/entities/y.js
+- /assets/lib/mathjax/jax/input/MathML/entities/z.js
+- /assets/lib/mathjax/jax/input/MathML/jax.js
+- /assets/lib/mathjax/jax/input/TeX/config.js
+- /assets/lib/mathjax/jax/input/TeX/jax.js
+- /assets/lib/mathjax/jax/output/PreviewHTML/config.js
+- /assets/lib/mathjax/jax/output/PreviewHTML/jax.js
+- /assets/lib/mathjax/jax/output/SVG/autoload/annotation-xml.js
+- /assets/lib/mathjax/jax/output/SVG/autoload/maction.js
+- /assets/lib/mathjax/jax/output/SVG/autoload/menclose.js
+- /assets/lib/mathjax/jax/output/SVG/autoload/mglyph.js
+- /assets/lib/mathjax/jax/output/SVG/autoload/mmultiscripts.js
+- /assets/lib/mathjax/jax/output/SVG/autoload/ms.js
+- /assets/lib/mathjax/jax/output/SVG/autoload/mtable.js
+- /assets/lib/mathjax/jax/output/SVG/autoload/multiline.js
+- /assets/lib/mathjax/jax/output/SVG/config.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Alphabets/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Arrows/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/DoubleStruck/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Fraktur/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Latin/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Main/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Marks/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Misc/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Monospace/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/NonUnicode/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Normal/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Operators/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/SansSerif/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Script/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Shapes/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Size1/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Size2/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Size3/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Size4/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Size5/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Size6/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Symbols/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/Variants/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/fontdata-extra.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Asana-Math/fontdata.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Alphabets/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Arrows/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/DoubleStruck/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Fraktur/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Latin/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Main/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Marks/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Misc/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Monospace/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/NonUnicode/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Normal/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Operators/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/SansSerif/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Script/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Shapes/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Size1/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Size2/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Size3/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Size4/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Size5/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Size6/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Symbols/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/Variants/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/fontdata-extra.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Pagella/fontdata.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Alphabets/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Arrows/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/DoubleStruck/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Fraktur/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Latin/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Main/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Marks/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Misc/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Monospace/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/NonUnicode/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Normal/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Operators/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/SansSerif/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Script/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Shapes/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Size1/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Size2/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Size3/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Size4/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Size5/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Size6/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Symbols/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/Variants/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/fontdata-extra.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Gyre-Termes/fontdata.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Alphabets/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Arrows/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/DoubleStruck/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Fraktur/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Latin/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Main/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Marks/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Misc/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Monospace/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/NonUnicode/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Normal/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Operators/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/SansSerif/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Script/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Shapes/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size1/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size2/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size3/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size4/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size5/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size6/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Size7/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Symbols/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/Variants/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/fontdata-extra.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Latin-Modern/fontdata.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Alphabets/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Arrows/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Fraktur/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Main/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Marks/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/NonUnicode/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Normal/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Operators/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Script/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Shapes/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Size1/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Size2/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Size3/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Size4/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Size5/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Symbols/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/Variants/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/fontdata-extra.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/Neo-Euler/fontdata.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Alphabets/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Arrows/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Arrows/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/DoubleStruck/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/DoubleStruck/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/DoubleStruck/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/DoubleStruck/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Fraktur/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Fraktur/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Latin/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Main/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Marks/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Marks/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Marks/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Marks/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Misc/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Monospace/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Normal/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Normal/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Normal/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Operators/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Operators/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/SansSerif/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/SansSerif/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/SansSerif/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/SansSerif/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Script/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Script/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Script/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Shapes/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Shapes/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Shapes/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Size1/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Size2/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Size3/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Size4/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Size5/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Symbols/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Symbols/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Variants/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Variants/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Variants/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/Variants/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/fontdata-extra.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/STIX-Web/fontdata.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Arrows.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/BoxDrawing.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Dingbats.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/EnclosedAlphanum.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GeneralPunctuation.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GeometricShapes.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/GreekAndCoptic.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Latin1Supplement.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/LatinExtendedA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/LetterlikeSymbols.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MathOperators.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscMathSymbolsB.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscSymbols.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/MiscTechnical.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/PUA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/SpacingModLetters.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/AMS/Regular/SuppMathOperators.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Caligraphic/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Caligraphic/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/Other.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Fraktur/Bold/PUA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/Other.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Fraktur/Regular/PUA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Arrows.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/CombDiactForSymbols.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GeneralPunctuation.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GeometricShapes.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/GreekAndCoptic.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Latin1Supplement.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LatinExtendedA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LatinExtendedB.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/LetterlikeSymbols.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MathOperators.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscMathSymbolsA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscSymbols.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/MiscTechnical.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SpacingModLetters.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SuppMathOperators.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Bold/SupplementalArrowsA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/GeneralPunctuation.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/GreekAndCoptic.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LatinExtendedB.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/LetterlikeSymbols.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Italic/MathOperators.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/GeometricShapes.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/GreekAndCoptic.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LatinExtendedA.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LatinExtendedB.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/LetterlikeSymbols.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/MathOperators.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/MiscSymbols.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/SpacingModLetters.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Main/Regular/SuppMathOperators.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Math/BoldItalic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Math/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Bold/Other.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Italic/Other.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/SansSerif/Regular/Other.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Script/Regular/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Script/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Size1/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Size2/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Size3/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Size4/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/BasicLatin.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/CombDiacritMarks.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Main.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/Typewriter/Regular/Other.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/fontdata-extra.js
+- /assets/lib/mathjax/jax/output/SVG/fonts/TeX/fontdata.js
+- /assets/lib/mathjax/jax/output/SVG/jax.js
+- /assets/lib/mathjax/localization/ar/FontWarnings.js
+- /assets/lib/mathjax/localization/ar/HTML-CSS.js
+- /assets/lib/mathjax/localization/ar/HelpDialog.js
+- /assets/lib/mathjax/localization/ar/MathML.js
+- /assets/lib/mathjax/localization/ar/MathMenu.js
+- /assets/lib/mathjax/localization/ar/TeX.js
+- /assets/lib/mathjax/localization/ast/FontWarnings.js
+- /assets/lib/mathjax/localization/ast/HTML-CSS.js
+- /assets/lib/mathjax/localization/ast/HelpDialog.js
+- /assets/lib/mathjax/localization/ast/MathML.js
+- /assets/lib/mathjax/localization/ast/MathMenu.js
+- /assets/lib/mathjax/localization/ast/TeX.js
+- /assets/lib/mathjax/localization/bcc/FontWarnings.js
+- /assets/lib/mathjax/localization/bcc/HTML-CSS.js
+- /assets/lib/mathjax/localization/bcc/HelpDialog.js
+- /assets/lib/mathjax/localization/bcc/MathML.js
+- /assets/lib/mathjax/localization/bcc/MathMenu.js
+- /assets/lib/mathjax/localization/bcc/TeX.js
+- /assets/lib/mathjax/localization/bg/FontWarnings.js
+- /assets/lib/mathjax/localization/bg/HTML-CSS.js
+- /assets/lib/mathjax/localization/bg/HelpDialog.js
+- /assets/lib/mathjax/localization/bg/MathML.js
+- /assets/lib/mathjax/localization/bg/MathMenu.js
+- /assets/lib/mathjax/localization/bg/TeX.js
+- /assets/lib/mathjax/localization/br/FontWarnings.js
+- /assets/lib/mathjax/localization/br/HTML-CSS.js
+- /assets/lib/mathjax/localization/br/HelpDialog.js
+- /assets/lib/mathjax/localization/br/MathML.js
+- /assets/lib/mathjax/localization/br/MathMenu.js
+- /assets/lib/mathjax/localization/br/TeX.js
+- /assets/lib/mathjax/localization/ca/FontWarnings.js
+- /assets/lib/mathjax/localization/ca/HTML-CSS.js
+- /assets/lib/mathjax/localization/ca/HelpDialog.js
+- /assets/lib/mathjax/localization/ca/MathML.js
+- /assets/lib/mathjax/localization/ca/MathMenu.js
+- /assets/lib/mathjax/localization/ca/TeX.js
+- /assets/lib/mathjax/localization/cdo/FontWarnings.js
+- /assets/lib/mathjax/localization/cdo/HTML-CSS.js
+- /assets/lib/mathjax/localization/cdo/HelpDialog.js
+- /assets/lib/mathjax/localization/cdo/MathML.js
+- /assets/lib/mathjax/localization/cdo/MathMenu.js
+- /assets/lib/mathjax/localization/cdo/TeX.js
+- /assets/lib/mathjax/localization/ce/FontWarnings.js
+- /assets/lib/mathjax/localization/ce/HTML-CSS.js
+- /assets/lib/mathjax/localization/ce/HelpDialog.js
+- /assets/lib/mathjax/localization/ce/MathML.js
+- /assets/lib/mathjax/localization/ce/MathMenu.js
+- /assets/lib/mathjax/localization/ce/TeX.js
+- /assets/lib/mathjax/localization/cs/FontWarnings.js
+- /assets/lib/mathjax/localization/cs/HTML-CSS.js
+- /assets/lib/mathjax/localization/cs/HelpDialog.js
+- /assets/lib/mathjax/localization/cs/MathML.js
+- /assets/lib/mathjax/localization/cs/MathMenu.js
+- /assets/lib/mathjax/localization/cs/TeX.js
+- /assets/lib/mathjax/localization/cy/FontWarnings.js
+- /assets/lib/mathjax/localization/cy/HTML-CSS.js
+- /assets/lib/mathjax/localization/cy/HelpDialog.js
+- /assets/lib/mathjax/localization/cy/MathML.js
+- /assets/lib/mathjax/localization/cy/MathMenu.js
+- /assets/lib/mathjax/localization/cy/TeX.js
+- /assets/lib/mathjax/localization/da/FontWarnings.js
+- /assets/lib/mathjax/localization/da/HTML-CSS.js
+- /assets/lib/mathjax/localization/da/HelpDialog.js
+- /assets/lib/mathjax/localization/da/MathML.js
+- /assets/lib/mathjax/localization/da/MathMenu.js
+- /assets/lib/mathjax/localization/da/TeX.js
+- /assets/lib/mathjax/localization/de/FontWarnings.js
+- /assets/lib/mathjax/localization/de/HTML-CSS.js
+- /assets/lib/mathjax/localization/de/HelpDialog.js
+- /assets/lib/mathjax/localization/de/MathML.js
+- /assets/lib/mathjax/localization/de/MathMenu.js
+- /assets/lib/mathjax/localization/de/TeX.js
+- /assets/lib/mathjax/localization/diq/FontWarnings.js
+- /assets/lib/mathjax/localization/diq/HTML-CSS.js
+- /assets/lib/mathjax/localization/diq/HelpDialog.js
+- /assets/lib/mathjax/localization/diq/MathML.js
+- /assets/lib/mathjax/localization/diq/MathMenu.js
+- /assets/lib/mathjax/localization/diq/TeX.js
+- /assets/lib/mathjax/localization/en/FontWarnings.js
+- /assets/lib/mathjax/localization/en/HTML-CSS.js
+- /assets/lib/mathjax/localization/en/HelpDialog.js
+- /assets/lib/mathjax/localization/en/MathML.js
+- /assets/lib/mathjax/localization/en/MathMenu.js
+- /assets/lib/mathjax/localization/en/TeX.js
+- /assets/lib/mathjax/localization/eo/FontWarnings.js
+- /assets/lib/mathjax/localization/eo/HTML-CSS.js
+- /assets/lib/mathjax/localization/eo/HelpDialog.js
+- /assets/lib/mathjax/localization/eo/MathML.js
+- /assets/lib/mathjax/localization/eo/MathMenu.js
+- /assets/lib/mathjax/localization/eo/TeX.js
+- /assets/lib/mathjax/localization/es/FontWarnings.js
+- /assets/lib/mathjax/localization/es/HTML-CSS.js
+- /assets/lib/mathjax/localization/es/HelpDialog.js
+- /assets/lib/mathjax/localization/es/MathML.js
+- /assets/lib/mathjax/localization/es/MathMenu.js
+- /assets/lib/mathjax/localization/es/TeX.js
+- /assets/lib/mathjax/localization/fa/FontWarnings.js
+- /assets/lib/mathjax/localization/fa/HTML-CSS.js
+- /assets/lib/mathjax/localization/fa/HelpDialog.js
+- /assets/lib/mathjax/localization/fa/MathML.js
+- /assets/lib/mathjax/localization/fa/MathMenu.js
+- /assets/lib/mathjax/localization/fa/TeX.js
+- /assets/lib/mathjax/localization/fi/FontWarnings.js
+- /assets/lib/mathjax/localization/fi/HTML-CSS.js
+- /assets/lib/mathjax/localization/fi/HelpDialog.js
+- /assets/lib/mathjax/localization/fi/MathML.js
+- /assets/lib/mathjax/localization/fi/MathMenu.js
+- /assets/lib/mathjax/localization/fi/TeX.js
+- /assets/lib/mathjax/localization/fr/FontWarnings.js
+- /assets/lib/mathjax/localization/fr/HTML-CSS.js
+- /assets/lib/mathjax/localization/fr/HelpDialog.js
+- /assets/lib/mathjax/localization/fr/MathML.js
+- /assets/lib/mathjax/localization/fr/MathMenu.js
+- /assets/lib/mathjax/localization/fr/TeX.js
+- /assets/lib/mathjax/localization/gl/FontWarnings.js
+- /assets/lib/mathjax/localization/gl/HTML-CSS.js
+- /assets/lib/mathjax/localization/gl/HelpDialog.js
+- /assets/lib/mathjax/localization/gl/MathML.js
+- /assets/lib/mathjax/localization/gl/MathMenu.js
+- /assets/lib/mathjax/localization/gl/TeX.js
+- /assets/lib/mathjax/localization/he/FontWarnings.js
+- /assets/lib/mathjax/localization/he/HTML-CSS.js
+- /assets/lib/mathjax/localization/he/HelpDialog.js
+- /assets/lib/mathjax/localization/he/MathML.js
+- /assets/lib/mathjax/localization/he/MathMenu.js
+- /assets/lib/mathjax/localization/he/TeX.js
+- /assets/lib/mathjax/localization/ia/FontWarnings.js
+- /assets/lib/mathjax/localization/ia/HTML-CSS.js
+- /assets/lib/mathjax/localization/ia/HelpDialog.js
+- /assets/lib/mathjax/localization/ia/MathML.js
+- /assets/lib/mathjax/localization/ia/MathMenu.js
+- /assets/lib/mathjax/localization/ia/TeX.js
+- /assets/lib/mathjax/localization/it/FontWarnings.js
+- /assets/lib/mathjax/localization/it/HTML-CSS.js
+- /assets/lib/mathjax/localization/it/HelpDialog.js
+- /assets/lib/mathjax/localization/it/MathML.js
+- /assets/lib/mathjax/localization/it/MathMenu.js
+- /assets/lib/mathjax/localization/it/TeX.js
+- /assets/lib/mathjax/localization/ja/FontWarnings.js
+- /assets/lib/mathjax/localization/ja/HTML-CSS.js
+- /assets/lib/mathjax/localization/ja/HelpDialog.js
+- /assets/lib/mathjax/localization/ja/MathML.js
+- /assets/lib/mathjax/localization/ja/MathMenu.js
+- /assets/lib/mathjax/localization/ja/TeX.js
+- /assets/lib/mathjax/localization/kn/FontWarnings.js
+- /assets/lib/mathjax/localization/kn/HTML-CSS.js
+- /assets/lib/mathjax/localization/kn/HelpDialog.js
+- /assets/lib/mathjax/localization/kn/MathML.js
+- /assets/lib/mathjax/localization/kn/MathMenu.js
+- /assets/lib/mathjax/localization/kn/TeX.js
+- /assets/lib/mathjax/localization/ko/FontWarnings.js
+- /assets/lib/mathjax/localization/ko/HTML-CSS.js
+- /assets/lib/mathjax/localization/ko/HelpDialog.js
+- /assets/lib/mathjax/localization/ko/MathML.js
+- /assets/lib/mathjax/localization/ko/MathMenu.js
+- /assets/lib/mathjax/localization/ko/TeX.js
+- /assets/lib/mathjax/localization/lb/FontWarnings.js
+- /assets/lib/mathjax/localization/lb/HTML-CSS.js
+- /assets/lib/mathjax/localization/lb/HelpDialog.js
+- /assets/lib/mathjax/localization/lb/MathML.js
+- /assets/lib/mathjax/localization/lb/MathMenu.js
+- /assets/lib/mathjax/localization/lb/TeX.js
+- /assets/lib/mathjax/localization/lki/FontWarnings.js
+- /assets/lib/mathjax/localization/lki/HTML-CSS.js
+- /assets/lib/mathjax/localization/lki/HelpDialog.js
+- /assets/lib/mathjax/localization/lki/MathML.js
+- /assets/lib/mathjax/localization/lki/MathMenu.js
+- /assets/lib/mathjax/localization/lki/TeX.js
+- /assets/lib/mathjax/localization/lt/FontWarnings.js
+- /assets/lib/mathjax/localization/lt/HTML-CSS.js
+- /assets/lib/mathjax/localization/lt/HelpDialog.js
+- /assets/lib/mathjax/localization/lt/MathML.js
+- /assets/lib/mathjax/localization/lt/MathMenu.js
+- /assets/lib/mathjax/localization/lt/TeX.js
+- /assets/lib/mathjax/localization/mk/FontWarnings.js
+- /assets/lib/mathjax/localization/mk/HTML-CSS.js
+- /assets/lib/mathjax/localization/mk/HelpDialog.js
+- /assets/lib/mathjax/localization/mk/MathML.js
+- /assets/lib/mathjax/localization/mk/MathMenu.js
+- /assets/lib/mathjax/localization/mk/TeX.js
+- /assets/lib/mathjax/localization/nl/FontWarnings.js
+- /assets/lib/mathjax/localization/nl/HTML-CSS.js
+- /assets/lib/mathjax/localization/nl/HelpDialog.js
+- /assets/lib/mathjax/localization/nl/MathML.js
+- /assets/lib/mathjax/localization/nl/MathMenu.js
+- /assets/lib/mathjax/localization/nl/TeX.js
+- /assets/lib/mathjax/localization/oc/FontWarnings.js
+- /assets/lib/mathjax/localization/oc/HTML-CSS.js
+- /assets/lib/mathjax/localization/oc/HelpDialog.js
+- /assets/lib/mathjax/localization/oc/MathML.js
+- /assets/lib/mathjax/localization/oc/MathMenu.js
+- /assets/lib/mathjax/localization/oc/TeX.js
+- /assets/lib/mathjax/localization/pl/FontWarnings.js
+- /assets/lib/mathjax/localization/pl/HTML-CSS.js
+- /assets/lib/mathjax/localization/pl/HelpDialog.js
+- /assets/lib/mathjax/localization/pl/MathML.js
+- /assets/lib/mathjax/localization/pl/MathMenu.js
+- /assets/lib/mathjax/localization/pl/TeX.js
+- /assets/lib/mathjax/localization/pt/FontWarnings.js
+- /assets/lib/mathjax/localization/pt/HTML-CSS.js
+- /assets/lib/mathjax/localization/pt/HelpDialog.js
+- /assets/lib/mathjax/localization/pt/MathML.js
+- /assets/lib/mathjax/localization/pt/MathMenu.js
+- /assets/lib/mathjax/localization/pt/TeX.js
+- /assets/lib/mathjax/localization/pt-br/FontWarnings.js
+- /assets/lib/mathjax/localization/pt-br/HTML-CSS.js
+- /assets/lib/mathjax/localization/pt-br/HelpDialog.js
+- /assets/lib/mathjax/localization/pt-br/MathML.js
+- /assets/lib/mathjax/localization/pt-br/MathMenu.js
+- /assets/lib/mathjax/localization/pt-br/TeX.js
+- /assets/lib/mathjax/localization/qqq/FontWarnings.js
+- /assets/lib/mathjax/localization/qqq/HTML-CSS.js
+- /assets/lib/mathjax/localization/qqq/HelpDialog.js
+- /assets/lib/mathjax/localization/qqq/MathML.js
+- /assets/lib/mathjax/localization/qqq/MathMenu.js
+- /assets/lib/mathjax/localization/qqq/TeX.js
+- /assets/lib/mathjax/localization/ru/FontWarnings.js
+- /assets/lib/mathjax/localization/ru/HTML-CSS.js
+- /assets/lib/mathjax/localization/ru/HelpDialog.js
+- /assets/lib/mathjax/localization/ru/MathML.js
+- /assets/lib/mathjax/localization/ru/MathMenu.js
+- /assets/lib/mathjax/localization/ru/TeX.js
+- /assets/lib/mathjax/localization/scn/FontWarnings.js
+- /assets/lib/mathjax/localization/scn/HTML-CSS.js
+- /assets/lib/mathjax/localization/scn/HelpDialog.js
+- /assets/lib/mathjax/localization/scn/MathML.js
+- /assets/lib/mathjax/localization/scn/MathMenu.js
+- /assets/lib/mathjax/localization/scn/TeX.js
+- /assets/lib/mathjax/localization/sco/FontWarnings.js
+- /assets/lib/mathjax/localization/sco/HTML-CSS.js
+- /assets/lib/mathjax/localization/sco/HelpDialog.js
+- /assets/lib/mathjax/localization/sco/MathML.js
+- /assets/lib/mathjax/localization/sco/MathMenu.js
+- /assets/lib/mathjax/localization/sco/TeX.js
+- /assets/lib/mathjax/localization/sk/FontWarnings.js
+- /assets/lib/mathjax/localization/sk/HTML-CSS.js
+- /assets/lib/mathjax/localization/sk/HelpDialog.js
+- /assets/lib/mathjax/localization/sk/MathML.js
+- /assets/lib/mathjax/localization/sk/MathMenu.js
+- /assets/lib/mathjax/localization/sk/TeX.js
+- /assets/lib/mathjax/localization/sl/FontWarnings.js
+- /assets/lib/mathjax/localization/sl/HTML-CSS.js
+- /assets/lib/mathjax/localization/sl/HelpDialog.js
+- /assets/lib/mathjax/localization/sl/MathML.js
+- /assets/lib/mathjax/localization/sl/MathMenu.js
+- /assets/lib/mathjax/localization/sl/TeX.js
+- /assets/lib/mathjax/localization/sv/FontWarnings.js
+- /assets/lib/mathjax/localization/sv/HTML-CSS.js
+- /assets/lib/mathjax/localization/sv/HelpDialog.js
+- /assets/lib/mathjax/localization/sv/MathML.js
+- /assets/lib/mathjax/localization/sv/MathMenu.js
+- /assets/lib/mathjax/localization/sv/TeX.js
+- /assets/lib/mathjax/localization/th/FontWarnings.js
+- /assets/lib/mathjax/localization/th/HTML-CSS.js
+- /assets/lib/mathjax/localization/th/HelpDialog.js
+- /assets/lib/mathjax/localization/th/MathML.js
+- /assets/lib/mathjax/localization/th/MathMenu.js
+- /assets/lib/mathjax/localization/th/TeX.js
+- /assets/lib/mathjax/localization/tr/FontWarnings.js
+- /assets/lib/mathjax/localization/tr/HTML-CSS.js
+- /assets/lib/mathjax/localization/tr/HelpDialog.js
+- /assets/lib/mathjax/localization/tr/MathML.js
+- /assets/lib/mathjax/localization/tr/MathMenu.js
+- /assets/lib/mathjax/localization/tr/TeX.js
+- /assets/lib/mathjax/localization/uk/FontWarnings.js
+- /assets/lib/mathjax/localization/uk/HTML-CSS.js
+- /assets/lib/mathjax/localization/uk/HelpDialog.js
+- /assets/lib/mathjax/localization/uk/MathML.js
+- /assets/lib/mathjax/localization/uk/MathMenu.js
+- /assets/lib/mathjax/localization/uk/TeX.js
+- /assets/lib/mathjax/localization/vi/FontWarnings.js
+- /assets/lib/mathjax/localization/vi/HTML-CSS.js
+- /assets/lib/mathjax/localization/vi/HelpDialog.js
+- /assets/lib/mathjax/localization/vi/MathML.js
+- /assets/lib/mathjax/localization/vi/MathMenu.js
+- /assets/lib/mathjax/localization/vi/TeX.js
+- /assets/lib/mathjax/localization/zh-hans/FontWarnings.js
+- /assets/lib/mathjax/localization/zh-hans/HTML-CSS.js
+- /assets/lib/mathjax/localization/zh-hans/HelpDialog.js
+- /assets/lib/mathjax/localization/zh-hans/MathML.js
+- /assets/lib/mathjax/localization/zh-hans/MathMenu.js
+- /assets/lib/mathjax/localization/zh-hans/TeX.js
+- /assets/lib/mathjax/localization/zh-hant/FontWarnings.js
+- /assets/lib/mathjax/localization/zh-hant/HTML-CSS.js
+- /assets/lib/mathjax/localization/zh-hant/HelpDialog.js
+- /assets/lib/mathjax/localization/zh-hant/MathML.js
+- /assets/lib/mathjax/localization/zh-hant/MathMenu.js
+- /assets/lib/mathjax/localization/zh-hant/TeX.js
+- /assets/lib/ogv/COPYING
+- /assets/lib/ogv/COPYING-dav1d.txt
+- /assets/lib/ogv/COPYING-ogg.txt
+- /assets/lib/ogv/COPYING-opus.txt
+- /assets/lib/ogv/COPYING-theora.txt
+- /assets/lib/ogv/COPYING-vorbis.txt
+- /assets/lib/ogv/LICENSE-nestegg.txt
+- /assets/lib/ogv/LICENSE-vpx.txt
+- /assets/lib/ogv/PATENTS-vpx.txt
+- /assets/lib/ogv/README.md
+- /core/classes/element-controllers/ElementController.ts
+- /core/classes/element-controllers/FrameElementController.ts
+- /core/classes/element-controllers/MediaElementController.ts
+- /core/features/emulator/classes/SecureStorage.ts
+- /core/features/h5p/assets/fonts/open-sans/LICENSE-2.0.txt

@@ -120,16 +120,29 @@
     "disableTokenFile": false,
     "iconsPrefixes": {
         "phosphor-icons": {
-            "regular": ["ph"]
+            "regular": [
+                "ph"
+            ]
         },
         "font-awesome": {
-            "brands": ["fab"],
-            "regular": ["far"],
-            "solid": ["fa", "fas"]
+            "brands": [
+                "fab"
+            ],
+            "regular": [
+                "far"
+            ],
+            "solid": [
+                "fa",
+                "fas"
+            ]
         },
         "moodle": {
-            "font-awesome": ["fam"],
-            "moodle": ["moodle"]
+            "font-awesome": [
+                "fam"
+            ],
+            "moodle": [
+                "moodle"
+            ]
         }
     },
     "clearIABSessionWhenAutoLogin": "android",

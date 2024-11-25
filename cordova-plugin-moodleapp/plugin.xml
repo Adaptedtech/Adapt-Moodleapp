@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-moodleapp" version="0.0.0">
-    <name>MoodleApp</name>
+    <name>adaptcommunitymobileApp</name>
     <description>Plugin with custom functionality for the Moodle App</description>
     <js-module src="www/index.js" name="moodleapp">
         <clobbers target="cordova.MoodleApp" />
